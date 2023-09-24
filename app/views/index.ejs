@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <style>
+        .todo-list {
+            list-style-type: none;
+        }
+        .todo-item {
+            margin: 10px 0;
+        }
+    </style>
+    
+</head>
+<body>
+    <%- include("partials/header.ejs") %>
+    <h1>Todo List</h1>
+    <form id="todo-form">
+        <input type="text" id="todo-input" placeholder="Enter a new task">
+        <button type="submit">Add Task</button>
+    </form>
+    <ul id="todo-list" class="todo-list">
+        <!-- Todo items will be added here -->
+    </ul>
+
+    <script>
+        // JavaScript code to handle adding and removing todo items will go here
+    </script>
+</body>
+</html>
