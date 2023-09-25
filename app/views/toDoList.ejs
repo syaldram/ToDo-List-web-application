@@ -1,0 +1,34 @@
+<ul class="nav nav-underline justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Personal</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Professional</a>
+        </li>
+</ul>
+
+<div class="d-flex flex-column flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-center">
+    <div class="list-group">
+        <% tasks.forEach(function(task) { %>
+            <label class="list-group-item d-flex gap-3">
+                <input class="form-check-input flex-shrink-0" type="checkbox" value="" style="font-size: 1.375em;">
+                <span class="pt-1 form-checked-content">
+                    <strong><%= task.title %></strong>
+                    <small class="d-block text-body-secondary">
+                        <%= task.time %>
+                    </small>
+                </span>
+            </label>
+        <% }); %>
+
+        <!-- Form to add new task -->
+        <form action="/addTask" method="POST">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Add new task..." aria-label="New task" aria-describedby="button-addon2" name="newTaskTitle">
+                <input type="text" class="form-control" placeholder="Choose time..." aria-label="Time" aria-describedby="button-addon2" name="newTaskTime">
+                <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Add Task</button>
+            </div>
+        </form>
+    </div>
+</div>
+
