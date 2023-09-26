@@ -4,6 +4,7 @@
 body {
     font-family: "Open Sans", sans-serif;
     color: #272829;
+    background-color: #D0E7D2;
 }
 
 h1,
@@ -17,4 +18,30 @@ h6 {
 
 html {
     scroll-behavior: smooth;
+}
+
+/*--------------------------------------------------------------
+# body
+--------------------------------------------------------------*/
+.list-group-item {
+  background-color: #E5F9DB;
+}
+
+.form-check-input {
+  background-color: #79AC78;
+}
+
+.date-heading {
+  border: 1px solid #618264;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #618264;
+  color: #272829;
+  font-weight: bold;
+}
+
+.nav {
+  padding: 10px;
+  color: #272829;
+  font-weight: bold;
 }
